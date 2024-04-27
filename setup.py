@@ -4,6 +4,8 @@
 """
 
 # change
+# test change 2
+import torch
 import os
 from setuptools import setup, find_packages
 from torch.utils.cpp_extension import BuildExtension, CUDAExtension
