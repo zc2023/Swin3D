@@ -151,6 +151,7 @@ def sparse_self_attention(
 
 
 class Mlp(nn.Module):
+    # simple MLP
     def __init__(
         self,
         in_features,
@@ -381,7 +382,8 @@ class Upsample(nn.Module):
 
 class WindowAttention(nn.Module):
     """
-    Window based multi-head self attention (W-MSA) module with cRSE.
+    Window based multi-head self attention (W-MSA) module with cRSE. 
+    # contextual Relative Signal Encoding cRSE
     Designed for sparse structure
     It supports both of shifted and non-shifted window.
 
